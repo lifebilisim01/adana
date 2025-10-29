@@ -171,6 +171,35 @@ main {
     padding-top: 6rem;
 }
 
+.device-hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.device-hero__figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(0, 163, 180, 0.12), rgba(255, 193, 7, 0.18));
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+}
+
+.device-hero__figure img {
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+}
+
+.device-hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .slider {
     position: relative;
     overflow: hidden;
@@ -395,6 +424,26 @@ main {
     transform: translateY(-6px);
 }
 
+.card__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.card__media img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.08));
+    transition: transform var(--transition-base);
+}
+
+.card:hover .card__media img,
+.card:focus-within .card__media img {
+    transform: translateY(-6px);
+}
+
 .card__icon {
     width: 56px;
     height: 56px;
@@ -598,6 +647,57 @@ main {
 
 .cta li {
     margin-bottom: 0.5rem;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.timeline__item {
+    background: rgba(0, 163, 180, 0.1);
+    border-radius: var(--radius-md);
+    padding: 1.8rem;
+    box-shadow: var(--shadow-soft);
+    position: relative;
+}
+
+.timeline__item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px dashed rgba(0, 163, 180, 0.25);
+    pointer-events: none;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-card i {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.contact-card .button {
+    align-self: flex-start;
+    margin-top: 0.5rem;
 }
 
 .legal-grid {

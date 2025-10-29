@@ -12,6 +12,24 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+    <div class="offcanvas" id="mobileMenu" aria-hidden="true" aria-labelledby="menuToggle">
+        <div class="offcanvas__header">
+            <span class="logo">Adana Servis</span>
+            <button class="offcanvas__close" aria-label="Menüyü kapat"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <nav class="offcanvas__nav" aria-label="Mobil menü">
+            <a href="../hakkimizda.html">Hakkımızda</a>
+            <a href="../cihazlar.html">Cihazlar</a>
+            <a href="../markalar.html">Markalar</a>
+            <a href="../bolgeler.html">Bölgeler</a>
+            <a href="../ariza-kodlari.html">Arıza Kodları</a>
+            <a href="../sozlesmeler.html">Sözleşmeler</a>
+            <a href="../iletisim.html">İletişim</a>
+        </nav>
+        <div class="offcanvas__cta">
+            <a class="button button--primary" href="tel:03222281552"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
+        </div>
+    </div>
     <header class="topbar">
         <div class="topbar__inner">
             <button id="menuToggle" class="topbar__menu" aria-label="Menüyü aç">
@@ -21,12 +39,13 @@
             </button>
             <a class="logo" href="../index.html">Adana Servis</a>
             <nav class="topbar__nav" aria-label="Ana menü">
-                <a href="../index.html#cihazlar">Cihazlar</a>
-                <a href="../index.html#markalar">Markalar</a>
-                <a href="../index.html#bolgeler">Bölgeler</a>
-                <a href="../index.html#ariza-kodlari">Arıza Kodları</a>
-                <a href="../index.html#sozlesmeler">Sözleşmeler</a>
-                <a href="../index.html#iletisim">İletişim</a>
+                <a href="../hakkimizda.html">Hakkımızda</a>
+                <a href="../cihazlar.html">Cihazlar</a>
+                <a href="../markalar.html">Markalar</a>
+                <a href="../bolgeler.html">Bölgeler</a>
+                <a href="../ariza-kodlari.html">Arıza Kodları</a>
+                <a href="../sozlesmeler.html">Sözleşmeler</a>
+                <a href="../iletisim.html">İletişim</a>
             </nav>
             <a class="topbar__phone" href="tel:03222281552"><i class="fa-solid fa-phone"></i> 0322 228 15 52</a>
         </div>
@@ -100,7 +119,7 @@
     </footer>
     <div class="mobile-actions" aria-label="Hızlı erişim">
         <a href="tel:03222281552" class="mobile-actions__btn mobile-actions__btn--call"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
-        <a href="../index.html#bolgeler" class="mobile-actions__btn mobile-actions__btn--book"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
+        <a href="../bolgeler.html" class="mobile-actions__btn mobile-actions__btn--book"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
     </div>
     <script src="../assets/js/main.js"></script>
 </body>

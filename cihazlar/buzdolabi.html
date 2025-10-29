@@ -12,6 +12,24 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+    <div class="offcanvas" id="mobileMenu" aria-hidden="true" aria-labelledby="menuToggle">
+        <div class="offcanvas__header">
+            <span class="logo">Adana Servis</span>
+            <button class="offcanvas__close" aria-label="Menüyü kapat"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <nav class="offcanvas__nav" aria-label="Mobil menü">
+            <a href="../hakkimizda.html">Hakkımızda</a>
+            <a href="../cihazlar.html">Cihazlar</a>
+            <a href="../markalar.html">Markalar</a>
+            <a href="../bolgeler.html">Bölgeler</a>
+            <a href="../ariza-kodlari.html">Arıza Kodları</a>
+            <a href="../sozlesmeler.html">Sözleşmeler</a>
+            <a href="../iletisim.html">İletişim</a>
+        </nav>
+        <div class="offcanvas__cta">
+            <a class="button button--primary" href="tel:03222281552"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
+        </div>
+    </div>
     <header class="topbar">
         <div class="topbar__inner">
             <button id="menuToggle" class="topbar__menu" aria-label="Menüyü aç">
@@ -21,12 +39,13 @@
             </button>
             <a class="logo" href="../index.html">Adana Servis</a>
             <nav class="topbar__nav" aria-label="Ana menü">
-                <a href="../index.html#cihazlar">Cihazlar</a>
-                <a href="../index.html#markalar">Markalar</a>
-                <a href="../index.html#bolgeler">Bölgeler</a>
-                <a href="../index.html#ariza-kodlari">Arıza Kodları</a>
-                <a href="../index.html#sozlesmeler">Sözleşmeler</a>
-                <a href="../index.html#iletisim">İletişim</a>
+                <a href="./hakkimizda.html">Hakkımızda</a>
+                <a href="./cihazlar.html">Cihazlar</a>
+                <a href="./markalar.html">Markalar</a>
+                <a href="./bolgeler.html">Bölgeler</a>
+                <a href="./ariza-kodlari.html">Arıza Kodları</a>
+                <a href="./sozlesmeler.html">Sözleşmeler</a>
+                <a href="./iletisim.html">İletişim</a>
             </nav>
             <a class="topbar__phone" href="tel:03222281552"><i class="fa-solid fa-phone"></i> 0322 228 15 52</a>
         </div>
@@ -35,38 +54,45 @@
     <main>
         <section class="hero" style="padding-top:5rem;">
             <div class="section section--inset">
-                <div class="section__header">
-                    <span class="section__eyebrow">Buzdolabı Servisi</span>
-                    <h1>Adana Buzdolabı Servis Hizmeti</h1>
-                    <p>Adana'nın tüm ilçelerinde buzdolabı arızalarına yerinde müdahale eden uzman ekibimiz, soğutma performansını en hızlı şekilde geri kazandırır.</p>
-                </div>
-                <div class="feature-grid">
-                    <article class="feature">
-                        <i class="fa-solid fa-temperature-low feature__icon"></i>
-                        <h3>Sık Karşılaşılan Sorunlar</h3>
-                        <ul>
-                            <li>Soğutmama veya dengesiz soğutma</li>
-                            <li>Aşırı buzlanma ve karlanma</li>
-                            <li>Su kaçağı ve drenaj hattı tıkanıklığı</li>
-                            <li>Gürültülü çalışma ve kompresör arızaları</li>
-                        </ul>
-                    </article>
-                    <article class="feature">
-                        <i class="fa-solid fa-stethoscope feature__icon"></i>
-                        <h3>Ön Teşhis ve Bakım</h3>
-                        <p>Cihaz geçmişini analiz ederek sensör, fan, motor ve elektronik kart kontrollerini yapar; verimliliği artırmak için periyodik bakım önerileri sunarız.</p>
-                    </article>
-                    <article class="feature">
-                        <i class="fa-solid fa-phone-volume feature__icon"></i>
-                        <h3>Servis Çağırmanız İçin 5 Sebep</h3>
-                        <ol>
-                            <li>0322 228 15 52 numaralı çağrı hattından anında ulaşım</li>
-                            <li>Orijinal yedek parça ve garanti belgesi</li>
-                            <li>Soğutma performans ölçümü ve raporlama</li>
-                            <li>Aynı gün müdahale ve kayıtlı servis fişi</li>
-                            <li>Enerji tasarrufu için kalibrasyon</li>
-                        </ol>
-                    </article>
+                <div class="device-hero">
+                    <figure class="device-hero__figure">
+                        <img src="../assets/img/devices/buzdolabi.svg" alt="Turkuaz tonlarında buzdolabı illüstrasyonu">
+                    </figure>
+                    <div class="device-hero__content">
+                        <div class="section__header">
+                            <span class="section__eyebrow">Buzdolabı Servisi</span>
+                            <h1>Adana Buzdolabı Servis Hizmeti</h1>
+                            <p>Adana'nın tüm ilçelerinde buzdolabı arızalarına yerinde müdahale eden uzman ekibimiz, soğutma performansını en hızlı şekilde geri kazandırır.</p>
+                        </div>
+                        <div class="feature-grid">
+                            <article class="feature">
+                                <i class="fa-solid fa-temperature-low feature__icon"></i>
+                                <h3>Sık Karşılaşılan Sorunlar</h3>
+                                <ul>
+                                    <li>Soğutmama veya dengesiz soğutma</li>
+                                    <li>Aşırı buzlanma ve karlanma</li>
+                                    <li>Su kaçağı ve drenaj hattı tıkanıklığı</li>
+                                    <li>Gürültülü çalışma ve kompresör arızaları</li>
+                                </ul>
+                            </article>
+                            <article class="feature">
+                                <i class="fa-solid fa-stethoscope feature__icon"></i>
+                                <h3>Ön Teşhis ve Bakım</h3>
+                                <p>Cihaz geçmişini analiz ederek sensör, fan, motor ve elektronik kart kontrollerini yapar; verimliliği artırmak için periyodik bakım önerileri sunarız.</p>
+                            </article>
+                            <article class="feature">
+                                <i class="fa-solid fa-phone-volume feature__icon"></i>
+                                <h3>Servis Çağırmanız İçin 5 Sebep</h3>
+                                <ol>
+                                    <li>0322 228 15 52 numaralı çağrı hattından anında ulaşım</li>
+                                    <li>Orijinal yedek parça ve garanti belgesi</li>
+                                    <li>Soğutma performans ölçümü ve raporlama</li>
+                                    <li>Aynı gün müdahale ve kayıtlı servis fişi</li>
+                                    <li>Enerji tasarrufu için kalibrasyon</li>
+                                </ol>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -149,7 +175,7 @@
     </footer>
     <div class="mobile-actions" aria-label="Hızlı erişim">
         <a href="tel:03222281552" class="mobile-actions__btn mobile-actions__btn--call"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
-        <a href="../index.html#cihazlar" class="mobile-actions__btn mobile-actions__btn--book"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
+        <a href="../cihazlar.html" class="mobile-actions__btn mobile-actions__btn--book"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
     </div>
     <script src="../assets/js/main.js"></script>
 </body>

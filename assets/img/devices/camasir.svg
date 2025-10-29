@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 220" role="img" aria-labelledby="title desc">
+  <title id="title">Çamaşır makinesi illüstrasyonu</title>
+  <desc id="desc">Turkuaz gövdeli, sarı detaylı bir çamaşır makinesi</desc>
+  <defs>
+    <linearGradient id="washerBody" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#1bcad3" />
+      <stop offset="1" stop-color="#0a5d68" />
+    </linearGradient>
+  </defs>
+  <rect x="15" y="10" width="150" height="200" rx="14" fill="url(#washerBody)" stroke="#06353c" stroke-width="6" />
+  <rect x="30" y="30" width="120" height="36" rx="8" fill="#f8f9fa" opacity="0.9" />
+  <circle cx="90" cy="130" r="58" fill="#051f24" opacity="0.55" />
+  <circle cx="90" cy="130" r="44" fill="#f1f3f5" />
+  <circle cx="90" cy="130" r="24" fill="#0d6efd" opacity="0.75" />
+  <circle cx="42" cy="48" r="8" fill="#ffc107" />
+  <rect x="60" y="40" width="70" height="12" rx="6" fill="#ffc107" opacity="0.8" />
+</svg>

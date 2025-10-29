@@ -115,6 +115,10 @@ if (goRegionBtn) {
         const brand = document.getElementById('brandSelect').value;
         if (region && brand) {
             window.location.href = `bolgeler/${region}.html#${brand}`;
+        } else if (region) {
+            window.location.href = `bolgeler/${region}.html`;
+        } else if (brand) {
+            window.location.href = `markalar/${brand}.html`;
         }
     });
 }
