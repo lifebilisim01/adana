@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adana'nın tüm ilçelerinde yerinde servis, bakım ve montaj hizmeti sunuyoruz.">
+    <title>Bölgeler | Adana Beyaz Eşya Servisi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTSrQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQe+IC1L5Hb5C7q0CvSOy4C9mX1J0j5mLhXtF3vY6CkVx3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar__inner">
+            <button id="menuToggle" class="topbar__menu" aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a class="logo" href="index.html">Adana Servis</a>
+            <nav class="topbar__nav" aria-label="Ana menü">
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="cihazlar.html">Cihazlar</a>
+                <a href="markalar.html">Markalar</a>
+                <a href="bolgeler.html">Bölgeler</a>
+                <a href="ariza-kodlari.html">Arıza Kodları</a>
+                <a href="sozlesmeler.html">Sözleşmeler</a>
+                <a href="iletisim.html">İletişim</a>
+            </nav>
+            <a class="topbar__phone" href="tel:03222281552"><i class="fa-solid fa-phone"></i> 0322 228 15 52</a>
+        </div>
+    </header>
+
+    <div class="offcanvas" id="mobileMenu" aria-hidden="true" aria-labelledby="menuToggle">
+        <div class="offcanvas__header">
+            <span class="logo">Adana Servis</span>
+            <button class="offcanvas__close" aria-label="Menüyü kapat"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <nav class="offcanvas__nav" aria-label="Mobil menü">
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="cihazlar.html">Cihazlar</a>
+            <a href="markalar.html">Markalar</a>
+            <a href="bolgeler.html">Bölgeler</a>
+            <a href="ariza-kodlari.html">Arıza Kodları</a>
+            <a href="sozlesmeler.html">Sözleşmeler</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+        <div class="offcanvas__cta">
+            <a class="button button--primary" href="tel:03222281552"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero" style="padding-top:5rem;">
+            <div class="section section--inset">
+                <div class="section__header">
+                    <span class="section__eyebrow">Bölgeler</span>
+                    <h1>Adana'nın her ilçesinde yerinde servis</h1>
+                    <p>İlçenizi ve markanızı seçerek detaylı servis bilgilerimize ulaşabilir, bölge bazlı ekiplerimizle iletişime geçebilirsiniz.</p>
+                </div>
+                <div class="region-selector" role="group" aria-label="İlçe ve marka seçici">
+                    <div class="region-selector__field">
+                        <label for="regionSelect">İlçe Seçin</label>
+                        <select id="regionSelect">
+                            <option value="" selected>İlçe seçin</option>
+                            <option value="seyhan">Seyhan</option>
+                            <option value="cukurova">Çukurova</option>
+                            <option value="yuregir">Yüreğir</option>
+                            <option value="saricam">Sarıçam</option>
+                            <option value="ceyhan">Ceyhan</option>
+                            <option value="kozan">Kozan</option>
+                            <option value="imamoglu">İmamoğlu</option>
+                            <option value="karaisali">Karaisalı</option>
+                            <option value="karatas">Karataş</option>
+                            <option value="pozanti">Pozantı</option>
+                            <option value="saimbeyli">Saimbeyli</option>
+                            <option value="tufanbeyli">Tufanbeyli</option>
+                            <option value="yumurtalik">Yumurtalık</option>
+                            <option value="feke">Feke</option>
+                            <option value="aladag">Aladağ</option>
+                        </select>
+                    </div>
+                    <div class="region-selector__field">
+                        <label for="brandSelect">Marka Seçin</label>
+                        <select id="brandSelect">
+                            <option value="" selected>Marka seçin</option>
+                            <option value="arcelik">Arçelik</option>
+                            <option value="beko">Beko</option>
+                            <option value="bosch">Bosch</option>
+                            <option value="siemens">Siemens</option>
+                            <option value="vestel">Vestel</option>
+                            <option value="profilo">Profilo</option>
+                            <option value="viessmann">Viessmann</option>
+                            <option value="baymak">Baymak</option>
+                        </select>
+                    </div>
+                    <button class="button button--primary" id="goRegion">Sayfaya Git</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__header">
+                <span class="section__eyebrow">İlçe Sayfaları</span>
+                <h2>Hızlıca bölge seçin</h2>
+                <p>Her ilçe sayfasında hizmet verdiğimiz cihazlar, markalar ve servis planını bulabilirsiniz.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Seyhan</h3>
+                    <p>Merkez servis üssümüz, tüm cihazlarda aynı gün yerinde hizmet.</p>
+                    <a class="card__link" href="bolgeler/seyhan.html">Seyhan servisi</a>
+                </article>
+                <article class="card">
+                    <h3>Çukurova</h3>
+                    <p>Buzdolabı, ankastre ve klima bakımında uzman mobil ekipler.</p>
+                    <a class="card__link" href="bolgeler/cukurova.html">Çukurova servisi</a>
+                </article>
+                <article class="card">
+                    <h3>Yüreğir</h3>
+                    <p>Çamaşır, bulaşık ve kombi cihazlarında hızlı çözümler.</p>
+                    <a class="card__link" href="bolgeler/yuregir.html">Yüreğir servisi</a>
+                </article>
+                <article class="card">
+                    <h3>Sarıçam</h3>
+                    <p>Klima ve kombi bakımlarında düzenli kontrol planları.</p>
+                    <a class="card__link" href="bolgeler/saricam.html">Sarıçam servisi</a>
+                </article>
+                <article class="card">
+                    <h3>Ceyhan</h3>
+                    <p>Sanayi bölgelerine özel hızlı yedek parça lojistiği.</p>
+                    <a class="card__link" href="bolgeler/ceyhan.html">Ceyhan servisi</a>
+                </article>
+                <article class="card">
+                    <h3>Kozan</h3>
+                    <p>Buzdolabı ve klima arızalarında kırsal bölgede yerinde servis.</p>
+                    <a class="card__link" href="bolgeler/kozan.html">Kozan servisi</a>
+                </article>
+                <article class="card">
+                    <h3>Yumurtalık</h3>
+                    <p>Yazlık bölgelerde kombi ve beyaz eşya bakımı için sezonluk ekipler.</p>
+                    <a class="card__link" href="bolgeler/yumurtalik.html">Yumurtalık servisi</a>
+                </article>
+                <article class="card">
+                    <h3>Aladağ</h3>
+                    <p>Yüksek rakımda verimli ısıtma için kombi ve soba çözümleri.</p>
+                    <a class="card__link" href="bolgeler/aladag.html">Aladağ servisi</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="section__header">
+                <span class="section__eyebrow">Hizmet Tablosu</span>
+                <h2>İlçelere göre hizmet kapsamı</h2>
+            </div>
+            <div class="region-table" role="table" aria-label="İlçelere göre hizmet kapsamı">
+                <div class="region-table__header" role="row">
+                    <span role="columnheader">İlçe</span>
+                    <span role="columnheader">Hizmetler</span>
+                    <span role="columnheader">Servis Ekibi</span>
+                </div>
+                <div class="region-table__row" role="row">
+                    <span role="cell">Seyhan</span>
+                    <span role="cell">Beyaz eşya, klima, kombi, TV</span>
+                    <span role="cell">Merkez Teknik Üs</span>
+                </div>
+                <div class="region-table__row" role="row">
+                    <span role="cell">Çukurova</span>
+                    <span role="cell">Buzdolabı, ankastre, klima</span>
+                    <span role="cell">Çukurova Mobil Ekip</span>
+                </div>
+                <div class="region-table__row" role="row">
+                    <span role="cell">Yüreğir</span>
+                    <span role="cell">Çamaşır, bulaşık, kombi</span>
+                    <span role="cell">Yüreğir Bakım Ekibi</span>
+                </div>
+                <div class="region-table__row" role="row">
+                    <span role="cell">Kozan</span>
+                    <span role="cell">Buzdolabı, klima</span>
+                    <span role="cell">Kozan Bölge Sorumlusu</span>
+                </div>
+                <div class="region-table__row" role="row">
+                    <span role="cell">Yumurtalık</span>
+                    <span role="cell">Kombi, beyaz eşya</span>
+                    <span role="cell">Sahil Servis Ekibi</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__bottom">
+            <p>&copy; <span id="year"></span> Adana Beyaz Eşya Servisi. Tüm hakları saklıdır.</p>
+            <p>İlçenize özel servis planları ve hızlı müdahale.</p>
+        </div>
+    </footer>
+
+    <div class="mobile-actions" aria-label="Hızlı erişim">
+        <a href="tel:03222281552" class="mobile-actions__btn mobile-actions__btn--call"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
+        <a href="markalar.html" class="mobile-actions__btn mobile-actions__btn--book"><i class="fa-solid fa-calendar-check"></i> Marka Seç</a>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

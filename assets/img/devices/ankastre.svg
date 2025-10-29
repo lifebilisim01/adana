@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" role="img" aria-labelledby="title desc">
+  <title id="title">Ankastre set illüstrasyonu</title>
+  <desc id="desc">Fırın ve ocak içeren turkuaz ankastre cihaz</desc>
+  <defs>
+    <linearGradient id="ovenBody" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#099aa6" />
+      <stop offset="1" stop-color="#052f35" />
+    </linearGradient>
+  </defs>
+  <rect x="20" y="18" width="160" height="188" rx="18" fill="#f8f9fa" stroke="#031c21" stroke-width="6" />
+  <rect x="36" y="36" width="128" height="42" rx="12" fill="url(#ovenBody)" />
+  <circle cx="60" cy="58" r="12" fill="#ffc107" opacity="0.9" />
+  <circle cx="100" cy="58" r="12" fill="#ffc107" opacity="0.65" />
+  <circle cx="140" cy="58" r="12" fill="#ffc107" opacity="0.45" />
+  <rect x="36" y="92" width="128" height="96" rx="14" fill="#0d6efd" opacity="0.2" />
+  <rect x="52" y="108" width="96" height="60" rx="12" fill="#0d6efd" opacity="0.35" />
+  <rect x="76" y="126" width="48" height="12" rx="6" fill="#ffc107" opacity="0.8" />
+</svg>

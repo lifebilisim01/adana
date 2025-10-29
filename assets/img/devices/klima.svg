@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 140" role="img" aria-labelledby="title desc">
+  <title id="title">Klima illüstrasyonu</title>
+  <desc id="desc">Turkuaz renkli, duvar tipi bir klima ünitesi</desc>
+  <defs>
+    <linearGradient id="acBody" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#0d9488" />
+      <stop offset="1" stop-color="#14b8a6" />
+    </linearGradient>
+  </defs>
+  <rect x="20" y="28" width="180" height="84" rx="16" fill="url(#acBody)" stroke="#064e3b" stroke-width="6" />
+  <rect x="36" y="48" width="148" height="22" rx="8" fill="#f8f9fa" opacity="0.8" />
+  <rect x="36" y="80" width="148" height="10" rx="5" fill="#042f2e" opacity="0.4" />
+  <rect x="132" y="56" width="40" height="8" rx="4" fill="#ffc107" opacity="0.85" />
+  <circle cx="70" cy="60" r="6" fill="#f8f9fa" opacity="0.85" />
+  <circle cx="94" cy="60" r="6" fill="#f8f9fa" opacity="0.85" />
+</svg>

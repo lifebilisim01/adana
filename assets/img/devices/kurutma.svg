@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 220" role="img" aria-labelledby="title desc">
+  <title id="title">Kurutma makinesi illüstrasyonu</title>
+  <desc id="desc">Turkuaz detaylara sahip bir kurutma makinesi</desc>
+  <defs>
+    <linearGradient id="dryerBody" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f9fb8" />
+      <stop offset="1" stop-color="#083c46" />
+    </linearGradient>
+  </defs>
+  <rect x="18" y="16" width="144" height="188" rx="16" fill="#f1f3f5" stroke="#052d36" stroke-width="6" />
+  <rect x="32" y="32" width="116" height="34" rx="10" fill="#0d6efd" opacity="0.25" />
+  <circle cx="90" cy="128" r="58" fill="url(#dryerBody)" />
+  <circle cx="90" cy="128" r="40" fill="#f8f9fa" opacity="0.9" />
+  <path d="M90 90 A38 38 0 0 1 124 124" fill="none" stroke="#ffc107" stroke-width="6" stroke-linecap="round" />
+  <path d="M90 166 A38 38 0 0 1 56 132" fill="none" stroke="#ffc107" stroke-width="6" stroke-linecap="round" />
+  <circle cx="48" cy="48" r="8" fill="#ffc107" />
+  <rect x="64" y="44" width="72" height="8" rx="4" fill="#ffc107" opacity="0.8" />
+</svg>
