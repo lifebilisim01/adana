@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyaz Eşya Servisi | Antalya Teknik Destek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-Z6YjRHF9RSbVSSMzdON3NofM8JrIoVNewc19hXtOD87b5iV/mQJu1WDVYj1WFJsbgx5caX5/C/POb44IVdQmJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="topbar">
+            <div class="logo">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span>Beyaz Eşya Servisi</span>
+            </div>
+            <div class="top-actions">
+                <a class="hotline" href="tel:02423220070"><i class="fa-solid fa-phone"></i> 0242 322 00 70</a>
+                <button class="menu-toggle" aria-label="Menüyü Aç"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <nav class="main-nav" aria-label="Ana menü">
+            <ul>
+                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
+                <li><a href="devices.html"><i class="fa-solid fa-plug"></i> Cihazlar</a></li>
+                <li><a href="brands.html"><i class="fa-solid fa-layer-group"></i> Markalar</a></li>
+                <li><a href="regions.html"><i class="fa-solid fa-map-location-dot"></i> Bölgeler</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-comments"></i> İletişim</a></li>
+                <li class="cta"><a href="tel:02423220070"><i class="fa-solid fa-headset"></i> Müşteri Hizmetleri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-slider" aria-label="Kampanya ve hizmetler">
+            <div class="slider" data-slider>
+                <article class="slide active" style="--bg:url('https://images.unsplash.com/photo-1581579186989-6ee1ab1f5df6?auto=format&fit=crop&w=1400&q=80')">
+                    <div class="overlay"></div>
+                    <div class="slide-content">
+                        <span class="badge">24/7 Destek</span>
+                        <h1>Antalya'da tüm beyaz eşya arızalarına anında çözüm</h1>
+                        <p>Yetkin ustalarımız ve orijinal yedek parçalarımızla cihazınızı ilk günkü performansına döndürüyoruz.</p>
+                        <div class="actions">
+                            <a class="btn primary" href="#service-finder">Servis Kaydı Oluştur</a>
+                            <a class="btn outline" href="tel:02423220070">Hemen Ara</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="slide" style="--bg:url('https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?auto=format&fit=crop&w=1400&q=80')">
+                    <div class="overlay"></div>
+                    <div class="slide-content">
+                        <span class="badge yellow">Garantili İşçilik</span>
+                        <h1>Klima ve kombi bakımlarında kampanya dönemi başladı</h1>
+                        <p>Enerji tasarruflu çözümlerle faturalarınızı düşürüyor, konforunuzu maksimumda tutuyoruz.</p>
+                        <div class="actions">
+                            <a class="btn primary" href="#pricing">Fiyatları İncele</a>
+                            <a class="btn outline" href="devices.html">Cihazlarımız</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="slide" style="--bg:url('https://images.unsplash.com/photo-1600585154340-0ef3c08f07e1?auto=format&fit=crop&w=1400&q=80')">
+                    <div class="overlay"></div>
+                    <div class="slide-content">
+                        <span class="badge red">Acil Müdahale</span>
+                        <h1>1 saat içinde adresinizde, aynı gün çözüm garantisi</h1>
+                        <p>Antalya'nın tüm ilçelerine yayılmış mobil servis ağımızla hızlı ve güvenilir hizmet veriyoruz.</p>
+                        <div class="actions">
+                            <a class="btn primary" href="regions.html">Bölgelerimizi Gör</a>
+                            <a class="btn outline" href="#testimonials">Müşteri Yorumları</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="slider-controls">
+                <button class="ctrl prev" data-prev aria-label="Önceki"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="ctrl next" data-next aria-label="Sonraki"><i class="fa-solid fa-chevron-right"></i></button>
+                <div class="dots" data-dots></div>
+            </div>
+        </section>
+
+        <section id="service-finder" class="service-finder">
+            <div class="section-heading">
+                <h2><i class="fa-solid fa-magnifying-glass-location"></i> Hızlı Servis Bulucu</h2>
+                <p>Markanızı, cihazınızı ve bulunduğunuz ilçeyi seçerek size en uygun servis paketimizi keşfedin.</p>
+            </div>
+            <div class="finder-grid">
+                <label>
+                    <span>İlçe</span>
+                    <select id="districtSelect"></select>
+                </label>
+                <label>
+                    <span>Marka</span>
+                    <select id="brandSelect"></select>
+                </label>
+                <label>
+                    <span>Cihaz</span>
+                    <select id="deviceSelect"></select>
+                </label>
+                <button class="btn primary" id="searchService"><i class="fa-solid fa-arrow-right"></i> Git</button>
+            </div>
+            <div class="results" id="serviceResults" aria-live="polite"></div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="section-heading">
+                <h2><i class="fa-solid fa-tags"></i> Şeffaf Servis Ücretleri</h2>
+                <p>Tüm hizmetlerimizde işçilik ve parça garantisi ile bütçenizi koruyan paketler sunuyoruz.</p>
+            </div>
+            <div class="price-table" id="priceTable"></div>
+        </section>
+
+        <section class="devices" id="devices">
+            <div class="section-heading">
+                <h2><i class="fa-solid fa-toolbox"></i> Uzmanlık Alanlarımız</h2>
+                <p>Her cihaz için ayrı uzman ekibimiz, detaylı bakım protokolleri ve orijinal yedek parça stoklarımız ile yanınızda.</p>
+            </div>
+            <div class="device-cards" id="deviceCards"></div>
+            <div class="section-footer">
+                <a class="btn outline" href="devices.html">Tüm cihaz servis detayları</a>
+            </div>
+        </section>
+
+        <section class="brands" id="brands">
+            <div class="section-heading">
+                <h2><i class="fa-solid fa-certificate"></i> Hizmet Verdiğimiz Markalar</h2>
+                <p>Dünya çapında güvenilir markaların yetkili servisi deneyimi ile çalışıyoruz.</p>
+            </div>
+            <div class="brand-grid" id="brandGrid"></div>
+            <div class="section-footer">
+                <a class="btn outline" href="brands.html">Marka sayfasına git</a>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="section-heading">
+                <h2><i class="fa-solid fa-circle-question"></i> Arıza Kodları, Neden ve Çözümler</h2>
+                <p>En sık karşılaşılan arıza kodları için teknik açıklamalar ve çözüm önerilerimizi keşfedin.</p>
+            </div>
+            <div class="accordion" id="faultAccordion"></div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="content">
+                <h2>Antalya'nın her noktasına 60 dakikada servis</h2>
+                <p>Mobil araçlarımız ve uzman teknisyenlerimizle cihazınızı aynı gün içinde teslim ediyoruz.</p>
+            </div>
+            <a class="btn primary" href="tel:02423220070"><i class="fa-solid fa-phone-volume"></i> 0242 322 00 70</a>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="section-heading">
+                <h2><i class="fa-brands fa-google"></i> Google Müşteri Yorumları</h2>
+                <p>10.000+ mutlu müşterimizden gelen geribildirimler ile gurur duyuyoruz.</p>
+            </div>
+            <div class="testimonial-slider" data-testimonial-slider>
+                <button class="ctrl prev" data-testimonial-prev aria-label="Önceki yorum"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="testimonial-track" id="testimonialTrack"></div>
+                <button class="ctrl next" data-testimonial-next aria-label="Sonraki yorum"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="policies" id="policies">
+            <div class="section-heading">
+                <h2><i class="fa-solid fa-shield-heart"></i> Güven, Gizlilik ve Uyumluluk</h2>
+                <p>Google Ads politikalarına uyumlu, KVKK kapsamında veri güvenliğinizi önceleyen bir servisiz.</p>
+            </div>
+            <div class="policy-grid">
+                <article>
+                    <h3>KVKK Aydınlatma Metni</h3>
+                    <p>Kişisel verileriniz yalnızca servis talebinizi karşılamak ve yasal yükümlülüklerimizi yerine getirmek amacıyla, açık rızanız ile işlenmektedir. Verilerinize erişim sadece yetkili personellerimizle sınırlıdır.</p>
+                </article>
+                <article>
+                    <h3>Gizlilik Politikası</h3>
+                    <p>Site üzerinden paylaştığınız bilgiler güvenli sunucularda saklanır, üçüncü kişilerle paylaşılmaz. Çerezlerimizi sadece hizmet kalitemizi artırmak ve tercihlerinizi hatırlamak için kullanıyoruz.</p>
+                </article>
+                <article>
+                    <h3>Tüketici Sözleşmesi</h3>
+                    <p>Servis sözleşmemizde işçilik süresi, yedek parça garantisi ve iptal koşulları açıkça belirtilmiştir. Her işlem için detaylı servis formu düzenlenir ve tarafınıza teslim edilir.</p>
+                </article>
+                <article>
+                    <h3>Google Ads Politikaları</h3>
+                    <p>Kabul edilemez iş uygulamalarını ve sistemleri atlatma politikalarını ihlal etmeyecek şekilde şeffaf fiyat, hizmet ve iletişim bilgilerimizi yayınlıyoruz. Tüm kampanyalarımız doğrulanmış içerik standartlarına uygundur.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Beyaz Eşya Servisi</h3>
+                <p>Antalya'nın 19 ilçesinde profesyonel beyaz eşya, kombi ve klima servis hizmeti. Aynı gün çözüm, orijinal yedek parça garantisi ve 7/24 müşteri desteği.</p>
+            </div>
+            <div>
+                <h4>Hızlı Menü</h4>
+                <ul>
+                    <li><a href="devices.html">Cihazlar</a></li>
+                    <li><a href="brands.html">Markalar</a></li>
+                    <li><a href="regions.html">Bölgeler</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>İletişim</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:02423220070">0242 322 00 70</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@beyazesyaservisi.com">info@beyazesyaservisi.com</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Şirinyalı Mah. Lara Cd. Muratpaşa / Antalya</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Sözleşmeler</h4>
+                <ul>
+                    <li><a href="#policies">KVKK Metni</a></li>
+                    <li><a href="#policies">Gizlilik Politikası</a></li>
+                    <li><a href="#policies">Tüketici Sözleşmesi</a></li>
+                    <li><a href="#policies">Google Ads Uyum Politikası</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="currentYear"></span> Beyaz Eşya Servisi Antalya. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Yukarı çık"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <div class="sticky-actions">
+        <a href="tel:02423220070" class="sticky-btn left"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
+        <a href="#service-finder" class="sticky-btn right"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
+    </div>
+
+    <script src="assets/js/app.js" defer></script>
+</body>
+</html>
