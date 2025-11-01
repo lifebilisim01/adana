@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220">
+  <defs>
+    <linearGradient id="tv-screen" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#00172b"/>
+      <stop offset="100%" stop-color="#00537a"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="30" width="280" height="150" rx="16" fill="#1c2f45"/>
+  <rect x="30" y="40" width="260" height="130" rx="12" fill="url(#tv-screen)"/>
+  <path d="M120 190h80l18 18h-116z" fill="#1c2f45"/>
+  <circle cx="50" cy="105" r="6" fill="#5bc0eb" opacity="0.6"/>
+  <circle cx="80" cy="125" r="4" fill="#f9c846" opacity="0.6"/>
+  <circle cx="110" cy="85" r="5" fill="#f04652" opacity="0.6"/>
+</svg>

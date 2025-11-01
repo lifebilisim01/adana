@@ -102,7 +102,32 @@
 
     <div class="sticky-actions">
         <a href="tel:02423220070" class="sticky-btn left"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
-        <a href="contact.html" class="sticky-btn right"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
+        <a href="#brandShowcase" class="sticky-btn right"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
+    </div>
+
+    <div class="brand-modal" id="brandModal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="brand-modal__backdrop" data-modal-close></div>
+        <div class="brand-modal__dialog" role="document">
+            <button class="brand-modal__close" data-modal-close aria-label="Pencereyi kapat"><i class="fa-solid fa-xmark"></i></button>
+            <div class="brand-modal__header">
+                <i class="fa-solid fa-layer-group"></i>
+                <div>
+                    <h3 id="brandModalTitle"></h3>
+                    <p id="brandModalSubtitle"></p>
+                </div>
+            </div>
+            <div class="brand-modal__body">
+                <label class="brand-modal__field">
+                    <span><i class="fa-solid fa-gear"></i> Cihaz Seçin</span>
+                    <select id="brandDeviceSelect"></select>
+                </label>
+                <div class="brand-modal__content" id="brandModalContent"></div>
+            </div>
+            <div class="brand-modal__footer">
+                <a class="btn primary" href="tel:02423220070"><i class="fa-solid fa-headset"></i> 0242 322 00 70</a>
+                <a class="btn outline" href="contact.html"><i class="fa-solid fa-map-location-dot"></i> Lokasyonlar</a>
+            </div>
+        </div>
     </div>
 
     <script src="assets/js/app.js" defer></script>

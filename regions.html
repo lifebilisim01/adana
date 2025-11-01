@@ -43,12 +43,17 @@
             </div>
         </section>
 
-        <section class="regions inner">
+        <section class="regions inner" id="regionExplorer">
             <div class="section-heading">
                 <h2>Servis Bölgelerimiz</h2>
                 <p>Her bölge için yerel ekiplerimiz, hızlı müdahale süreleri ve mobil servis araçlarımızla hizmet veriyoruz.</p>
             </div>
-            <div class="region-grid" id="regionGrid"></div>
+            <div class="region-shell">
+                <aside class="region-nav" aria-label="İlçe listesi">
+                    <ul id="regionNav"></ul>
+                </aside>
+                <div class="region-panels" id="regionPanels"></div>
+            </div>
         </section>
 
         <section class="dynamic-table">
@@ -102,7 +107,7 @@
 
     <div class="sticky-actions">
         <a href="tel:02423220070" class="sticky-btn left"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
-        <a href="contact.html" class="sticky-btn right"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
+        <a href="#regionExplorer" class="sticky-btn right"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
     </div>
 
     <script src="assets/js/app.js" defer></script>

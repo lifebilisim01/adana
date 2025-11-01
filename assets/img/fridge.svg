@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 300">
+  <defs>
+    <linearGradient id="fridge-body" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#101d32"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+  <rect x="45" y="10" width="130" height="280" rx="26" fill="url(#fridge-body)" stroke="#1f354d" stroke-width="4"/>
+  <line x1="55" y1="150" x2="165" y2="150" stroke="#233d59" stroke-width="3"/>
+  <rect x="60" y="50" width="12" height="70" rx="6" fill="#5bc0eb"/>
+  <rect x="148" y="180" width="12" height="80" rx="6" fill="#5bc0eb"/>
+  <circle cx="110" cy="220" r="50" fill="#101d32" opacity="0.65"/>
+  <path d="M85 215c10-16 48-16 60 0l-8 12c-12-10-32-10-44 0z" fill="#f9c846" opacity="0.35"/>
+  <circle cx="90" cy="200" r="5" fill="#f04652" opacity="0.6"/>
+</svg>

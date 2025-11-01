@@ -43,7 +43,7 @@
             </div>
         </section>
 
-        <section class="contact inner">
+        <section class="contact inner" id="contactCards">
             <div class="section-heading">
                 <h2>Hızlı İletişim Kartları</h2>
                 <p>Tek tuşla bize ulaşın, servis talebinizi başlatın veya teknik danışmanlık alın.</p>
@@ -56,10 +56,10 @@
                     <a class="btn primary" href="tel:02423220070">0242 322 00 70</a>
                 </article>
                 <article>
-                    <i class="fa-solid fa-envelope-open-text"></i>
-                    <h3>Online Servis Talebi</h3>
-                    <p>Cihaz arızanızı birkaç adımda bildirin, ekibimiz sizi arayarak randevu oluştursun.</p>
-                    <button class="btn outline" data-open-form>Formu Aç</button>
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>Acil Servis Hattı</h3>
+                    <p>Elektrik kesintisi, su baskını veya ani arıza durumlarında doğrudan ekip şefimize bağlanın.</p>
+                    <a class="btn outline" href="tel:02423220070">Hemen Ara</a>
                 </article>
                 <article>
                     <i class="fa-solid fa-building"></i>
@@ -70,49 +70,28 @@
             </div>
         </section>
 
-        <section class="contact inner" id="contactFormSection">
+        <section class="contact inner call-flow">
             <div class="section-heading">
-                <h2>Dijital Servis Formu</h2>
-                <p>KVKK kapsamında korunan verileriniz ile güvenle servis kaydı oluşturabilirsiniz.</p>
+                <h2>Çağrı Sürecimiz Nasıl İşliyor?</h2>
+                <p>Telefonla aldığımız tüm servis taleplerini dijital sistemimize aktararak ekip planlamasını saniyeler içinde tamamlıyoruz.</p>
             </div>
-            <form class="contact-form" id="contactForm" novalidate>
-                <div class="form-group">
-                    <label for="name">Ad Soyad</label>
-                    <input type="text" id="name" name="name" required placeholder="Adınızı girin">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Telefon</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="0 5xx xxx xx xx">
-                </div>
-                <div class="form-group">
-                    <label for="email">E-posta</label>
-                    <input type="email" id="email" name="email" placeholder="ornek@mail.com">
-                </div>
-                <div class="form-group">
-                    <label for="district">İlçe</label>
-                    <select id="district" name="district" required></select>
-                </div>
-                <div class="form-group">
-                    <label for="brand">Marka</label>
-                    <select id="brand" name="brand" required></select>
-                </div>
-                <div class="form-group">
-                    <label for="device">Cihaz</label>
-                    <select id="device" name="device" required></select>
-                </div>
-                <div class="form-group full">
-                    <label for="message">Arıza Açıklaması</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Cihazınızdaki problemi kısaca anlatın"></textarea>
-                </div>
-                <div class="form-group policy">
-                    <label>
-                        <input type="checkbox" id="kvkk" required>
-                        <span>KVKK Aydınlatma Metni ve Google Ads kabul edilemez iş uygulamaları politikası kapsamında bilgilendirildim.</span>
-                    </label>
-                </div>
-                <button type="submit" class="btn primary">Servis Talebini Gönder</button>
-                <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
-            </form>
+            <div class="call-flow-grid">
+                <article>
+                    <span class="step">1</span>
+                    <h3>Çağrı Kaydı</h3>
+                    <p>Operatörlerimiz cihaz türünüzü, markanızı ve arıza tarifinizi dinleyerek talepleri KVKK uyumlu olarak sisteme girer.</p>
+                </article>
+                <article>
+                    <span class="step">2</span>
+                    <h3>Ekip Ataması</h3>
+                    <p>Servis yazılımımız konumunuza en yakın gezici ekibi atar ve SMS ile randevu saatini tarafınıza bildirir.</p>
+                </article>
+                <article>
+                    <span class="step">3</span>
+                    <h3>Saha ve Onay</h3>
+                    <p>Teknisyenimiz müdahaleyi tamamladıktan sonra dijital servis formu SMS olarak gönderilir ve onayınız alınır.</p>
+                </article>
+            </div>
         </section>
 
         <section class="map-section">
@@ -168,7 +147,7 @@
 
     <div class="sticky-actions">
         <a href="tel:02423220070" class="sticky-btn left"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
-        <a href="#contactFormSection" class="sticky-btn right"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
+        <a href="#contactCards" class="sticky-btn right"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
     </div>
 
     <script src="assets/js/app.js" defer></script>

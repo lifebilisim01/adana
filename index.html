@@ -78,6 +78,9 @@
                 <button class="ctrl prev" data-prev aria-label="Önceki"><i class="fa-solid fa-chevron-left"></i></button>
                 <button class="ctrl next" data-next aria-label="Sonraki"><i class="fa-solid fa-chevron-right"></i></button>
                 <div class="dots" data-dots></div>
+                <div class="slider-progress" aria-hidden="true">
+                    <span data-progress></span>
+                </div>
             </div>
         </section>
 
@@ -155,10 +158,34 @@
                 <h2><i class="fa-brands fa-google"></i> Google Müşteri Yorumları</h2>
                 <p>10.000+ mutlu müşterimizden gelen geribildirimler ile gurur duyuyoruz.</p>
             </div>
-            <div class="testimonial-slider" data-testimonial-slider>
-                <button class="ctrl prev" data-testimonial-prev aria-label="Önceki yorum"><i class="fa-solid fa-chevron-left"></i></button>
-                <div class="testimonial-track" id="testimonialTrack"></div>
-                <button class="ctrl next" data-testimonial-next aria-label="Sonraki yorum"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="google-review" id="googleReviewWidget" aria-live="polite">
+                <div class="review-header">
+                    <div class="review-branding">
+                        <i class="fa-brands fa-google"></i>
+                        <div>
+                            <p>Google İşletme Profili</p>
+                            <div class="rating-summary"><strong>4.9</strong><span>/5</span><div class="stars" aria-hidden="true"></div></div>
+                        </div>
+                    </div>
+                    <time class="review-date"></time>
+                </div>
+                <div class="review-body">
+                    <p class="review-text"></p>
+                </div>
+                <div class="review-meta">
+                    <div class="reviewer">
+                        <div class="avatar" aria-hidden="true"></div>
+                        <div>
+                            <span class="name"></span>
+                            <span class="district"></span>
+                        </div>
+                    </div>
+                    <div class="review-controls">
+                        <button type="button" class="pill" data-review-prev aria-label="Önceki yorumu gör"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button type="button" class="pill" data-review-next aria-label="Sonraki yorumu gör"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="review-dots" role="tablist" aria-label="Yorum seçici"></div>
             </div>
         </section>
 
@@ -231,6 +258,31 @@
     <div class="sticky-actions">
         <a href="tel:02423220070" class="sticky-btn left"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
         <a href="#service-finder" class="sticky-btn right"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
+    </div>
+
+    <div class="brand-modal" id="brandModal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="brand-modal__backdrop" data-modal-close></div>
+        <div class="brand-modal__dialog" role="document">
+            <button class="brand-modal__close" data-modal-close aria-label="Pencereyi kapat"><i class="fa-solid fa-xmark"></i></button>
+            <div class="brand-modal__header">
+                <i class="fa-solid fa-layer-group"></i>
+                <div>
+                    <h3 id="brandModalTitle"></h3>
+                    <p id="brandModalSubtitle"></p>
+                </div>
+            </div>
+            <div class="brand-modal__body">
+                <label class="brand-modal__field">
+                    <span><i class="fa-solid fa-gear"></i> Cihaz Seçin</span>
+                    <select id="brandDeviceSelect"></select>
+                </label>
+                <div class="brand-modal__content" id="brandModalContent"></div>
+            </div>
+            <div class="brand-modal__footer">
+                <a class="btn primary" href="tel:02423220070"><i class="fa-solid fa-headset"></i> 0242 322 00 70</a>
+                <a class="btn outline" href="#service-finder"><i class="fa-solid fa-arrow-trend-up"></i> Servis Paketleri</a>
+            </div>
+        </div>
     </div>
 
     <script src="assets/js/app.js" defer></script>
