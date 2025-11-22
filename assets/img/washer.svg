@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 260">
+  <defs>
+    <linearGradient id="washer-body" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f4f4f6"/>
+      <stop offset="100%" stop-color="#cfd5dc"/>
+    </linearGradient>
+    <linearGradient id="washer-door" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2f4c6a"/>
+      <stop offset="100%" stop-color="#0f2a45"/>
+    </linearGradient>
+    <linearGradient id="washer-glass" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#8ecae6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#023047" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect x="15" y="10" width="190" height="240" rx="18" fill="url(#washer-body)" stroke="#9aa4af" stroke-width="4"/>
+  <rect x="35" y="32" width="150" height="40" rx="8" fill="#e7ebf0" stroke="#c3cad3" stroke-width="3"/>
+  <circle cx="60" cy="52" r="8" fill="#f04652"/>
+  <rect x="85" y="42" width="40" height="12" rx="6" fill="#9aa4af"/>
+  <rect x="135" y="42" width="30" height="12" rx="6" fill="#9aa4af"/>
+  <circle cx="110" cy="150" r="78" fill="#f8f9fb" stroke="#8c99a3" stroke-width="6"/>
+  <circle cx="110" cy="150" r="58" fill="url(#washer-door)" stroke="#0f2a45" stroke-width="6"/>
+  <path d="M64 140c16-20 60-28 88-6 20 14 23 32 14 46-12 18-48 34-80 14-18-12-26-34-22-54z" fill="url(#washer-glass)"/>
+  <circle cx="72" cy="128" r="6" fill="#fff" opacity="0.65"/>
+</svg>

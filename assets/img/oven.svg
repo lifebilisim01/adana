@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260">
+  <defs>
+    <linearGradient id="oven-body" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5f6f8"/>
+      <stop offset="100%" stop-color="#cdd3db"/>
+    </linearGradient>
+    <linearGradient id="oven-door" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f334c"/>
+      <stop offset="100%" stop-color="#091726"/>
+    </linearGradient>
+  </defs>
+  <rect x="25" y="15" width="190" height="230" rx="18" fill="url(#oven-body)" stroke="#a3adba" stroke-width="4"/>
+  <rect x="40" y="30" width="160" height="36" rx="10" fill="#e1e5eb"/>
+  <circle cx="68" cy="48" r="8" fill="#f04652"/>
+  <circle cx="96" cy="48" r="8" fill="#f9c846"/>
+  <circle cx="124" cy="48" r="8" fill="#5bc0eb"/>
+  <circle cx="152" cy="48" r="8" fill="#2f8f5b"/>
+  <rect x="48" y="90" width="134" height="110" rx="12" fill="url(#oven-door)" stroke="#0d1b2a" stroke-width="4"/>
+  <path d="M60 102h110v50H60z" fill="#11273d" opacity="0.65"/>
+  <path d="M60 160h110" stroke="#f9c846" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 12"/>
+</svg>

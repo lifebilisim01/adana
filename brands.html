@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markalar | Beyaz Eşya Servisi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-Z6YjRHF9RSbVSSMzdON3NofM8JrIoVNewc19hXtOD87b5iV/mQJu1WDVYj1WFJsbgx5caX5/C/POb44IVdQmJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="inner-page">
+    <header class="site-header">
+        <div class="topbar">
+            <div class="logo">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span>Beyaz Eşya Servisi</span>
+            </div>
+            <div class="top-actions">
+                <a class="hotline" href="tel:02423220070"><i class="fa-solid fa-phone"></i> 0242 322 00 70</a>
+                <button class="menu-toggle" aria-label="Menüyü Aç"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <nav class="main-nav" aria-label="Ana menü">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
+                <li><a href="devices.html"><i class="fa-solid fa-plug"></i> Cihazlar</a></li>
+                <li><a href="brands.html" class="active"><i class="fa-solid fa-layer-group"></i> Markalar</a></li>
+                <li><a href="regions.html"><i class="fa-solid fa-map-location-dot"></i> Bölgeler</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-comments"></i> İletişim</a></li>
+                <li class="cta"><a href="tel:02423220070"><i class="fa-solid fa-headset"></i> Müşteri Hizmetleri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero" style="--bg:url('https://images.unsplash.com/photo-1523419409543-0c1df022bdd1?auto=format&fit=crop&w=1400&q=80')">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Hizmet Verdiğimiz Markalar</h1>
+                <p>Tüm beyaz eşya ve iklimlendirme markaları için eğitimli teknisyenlerimizle yanınızdayız.</p>
+            </div>
+        </section>
+
+        <section class="brands inner" id="brandShowcase">
+            <div class="section-heading">
+                <h2>Marka Kütüphanemiz</h2>
+                <p>Markanıza özel teknik bilgi birikimimiz, arıza veritabanımız ve yedek parça çözümlerimizle tanışın.</p>
+            </div>
+            <div class="brand-grid large" id="brandGridPage"></div>
+        </section>
+
+        <section class="dynamic-table">
+            <div class="section-heading">
+                <h2><i class="fa-solid fa-list-check"></i> Marka Servis Vaatlerimiz</h2>
+                <p>Yetkili standartlarıyla örtüşen prosedürlerimiz ve müşterilerimize sunduğumuz avantajlar.</p>
+            </div>
+            <div class="responsive-table" id="brandTable"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Beyaz Eşya Servisi</h3>
+                <p>Antalya'nın 19 ilçesinde profesyonel beyaz eşya, kombi ve klima servis hizmeti. Aynı gün çözüm, orijinal yedek parça garantisi ve 7/24 müşteri desteği.</p>
+            </div>
+            <div>
+                <h4>Hızlı Menü</h4>
+                <ul>
+                    <li><a href="devices.html">Cihazlar</a></li>
+                    <li><a href="brands.html">Markalar</a></li>
+                    <li><a href="regions.html">Bölgeler</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>İletişim</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:02423220070">0242 322 00 70</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@beyazesyaservisi.com">info@beyazesyaservisi.com</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Şirinyalı Mah. Lara Cd. Muratpaşa / Antalya</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Sözleşmeler</h4>
+                <ul>
+                    <li><a href="index.html#policies">KVKK Metni</a></li>
+                    <li><a href="index.html#policies">Gizlilik Politikası</a></li>
+                    <li><a href="index.html#policies">Tüketici Sözleşmesi</a></li>
+                    <li><a href="index.html#policies">Google Ads Uyum Politikası</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="currentYear"></span> Beyaz Eşya Servisi Antalya. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Yukarı çık"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <div class="sticky-actions">
+        <a href="tel:02423220070" class="sticky-btn left"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
+        <a href="#brandShowcase" class="sticky-btn right"><i class="fa-solid fa-calendar-check"></i> Servis Talebi</a>
+    </div>
+
+    <div class="brand-modal" id="brandModal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="brand-modal__backdrop" data-modal-close></div>
+        <div class="brand-modal__dialog" role="document">
+            <button class="brand-modal__close" data-modal-close aria-label="Pencereyi kapat"><i class="fa-solid fa-xmark"></i></button>
+            <div class="brand-modal__header">
+                <i class="fa-solid fa-layer-group"></i>
+                <div>
+                    <h3 id="brandModalTitle"></h3>
+                    <p id="brandModalSubtitle"></p>
+                </div>
+            </div>
+            <div class="brand-modal__body">
+                <label class="brand-modal__field">
+                    <span><i class="fa-solid fa-gear"></i> Cihaz Seçin</span>
+                    <select id="brandDeviceSelect"></select>
+                </label>
+                <div class="brand-modal__content" id="brandModalContent"></div>
+            </div>
+            <div class="brand-modal__footer">
+                <a class="btn primary" href="tel:02423220070"><i class="fa-solid fa-headset"></i> 0242 322 00 70</a>
+                <a class="btn outline" href="contact.html"><i class="fa-solid fa-map-location-dot"></i> Lokasyonlar</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js" defer></script>
+</body>
+</html>
